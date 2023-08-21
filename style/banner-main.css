@@ -1,0 +1,96 @@
+
+.banner_main .your-class div{
+    width: 100%;
+    height: 80vh !important;
+}
+
+.banner_main .your-class .banner_main1{
+    
+    background-image: url(../assets/banner-main/mulher-treinando-para-levantamento-de-peso-no-ginasio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner_main .your-class .banner_main2{
+    
+    background-image: url(../assets/banner-main/mulher-treinando-para-levantamento-de-peso-no-ginasio\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner_main .your-class .banner_main3{
+    
+    background-image: url(../assets/banner-main/mulher-treinando-para-levantamento-de-peso-no-ginasio\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.banner_main{
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.534);
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info h2, .info p, .info ul{
+    color: rgb(255, 255, 255);
+}
+
+.info h2{
+    font-size: 36px;
+}
+.info ul li:first-child{
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.info .preco{
+    font-size: 20px;
+}
+.info .preco span{
+    font-size: 26px;
+    font-style: italic;
+}
+
+@media (max-width:425px) {
+    .info{
+        width: 100%;
+        height: 300px;
+        top:auto;
+        bottom: 0;
+    }
+    .info h2{
+        margin: 0;
+        padding: 0;
+    }
+    .info .preco, .info ul{
+        margin: 10px;
+    }
+    .info ul li{
+        font-size: 14px;
+    }
+    .info ul li:first-child{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:320px){
+    .info .preco, .info ul{
+        margin: 0;
+    }
+    .info .preco{
+        font-size: 16px;
+    }
+}

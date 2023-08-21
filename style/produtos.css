@@ -1,0 +1,97 @@
+
+.product{
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    display:  flex;
+    justify-content: space-around;
+    
+}
+
+.product1{
+    width: 20%;
+    height: 400px;
+    background-image: url(../assets/produtos/foto-de-corpo-inteiro-de-desportista-bem-construido-desportista-posando-isolado-sobre-lilas.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.product2{
+    width: 20%;
+    height: 400px;
+    background-image: url(../assets/produtos/jovem-mulher-com-fones-de-ouvido-alongamento.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.product3{
+    width: 20%;
+    height: 400px;
+    background-image: url(../assets/produtos/mulher-desportivo-da-aptidao-nova-que-levanta-guardando-a-corda-de-salto-no-branco.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.product4{
+    width: 20%;
+    height: 400px;
+    background-image: url(../assets/produtos/retrato-de-corpo-inteiro-de-femea-de-fitness-atletica-e-sexy-em-um-sportswear-rosa.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.product_info{
+    position: relative;
+}
+.product_info div{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.158);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    bottom: -150px;
+}
+.product_info h3{
+    text-align: center;
+}
+.product_info h3, ul{
+    margin: 0;
+}
+
+.product_info ul li{
+    width: 100%;
+    
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px){
+    .product{
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: scroll;
+        justify-content: start;
+        margin-left: 20px;
+    }
+
+    .product1, .product2, .product3, .product4{
+        margin:  0 5px;
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media (max-width:320px){
+    .product{
+        margin-left: 10px;
+    }
+    .product1, .product2, .product3, .product4{
+        margin:  0 5px;
+        width: 285px;
+        
+    }
+}
